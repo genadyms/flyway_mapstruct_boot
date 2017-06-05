@@ -16,7 +16,7 @@ public interface PersonMapper {
 
     default PersonDTO toDtoFullname(Person person) {
         PersonDTO dto = new PersonDTO();
-        dto.setFullName(person.getFirstName()+" "+person.getLastName());
+        dto.setFullName(person.getFirstName() + " " + person.getLastName());
         return dto;
     }
 }
