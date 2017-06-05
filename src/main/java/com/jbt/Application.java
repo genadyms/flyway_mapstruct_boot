@@ -1,11 +1,9 @@
 package com.jbt;
 
 import com.jbt.dto.PersonDTO;
+import com.jbt.dto.mappers.MockMapper;
 import com.jbt.dto.mappers.PersonMapper;
-import com.jbt.model.Address;
-import com.jbt.model.Company;
-import com.jbt.model.CompanyType;
-import com.jbt.model.Person;
+import com.jbt.model.*;
 import org.mapstruct.Mapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -37,5 +35,7 @@ public class Application {
         System.out.println(PersonMapper.INSTANCE.personToDto(john));
         System.out.println(PersonMapper.INSTANCE.toDtoFullname(john));
 
+        Mock mock = new Mock(123);
+        System.out.println(MockMapper.INSTANSE.mockToDto(mock));
     }
 }
