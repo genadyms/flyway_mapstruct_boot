@@ -19,5 +19,5 @@ public interface PersonMapper {
         dto.setFullName(person.getFirstName() + " " + person.getLastName());
         return dto;
     }
-    //add comemnt for test Jenkins sytem
+    //add comment for test Jenkins sytem
 }
